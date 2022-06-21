@@ -79,7 +79,7 @@ class SSHWrapperPlumbum(SSHWrapper):
             )
         )
 
-        remote = ParamikoMachine(hostname, password=None, **plumbum_kwargs)
+        remote = ParamikoMachine(hostname, password=None, gss_auth=True, gss_kex=True, **plumbum_kwargs)
 
         if forward_agent == "yes":
             print("[ssh] forwarding local agent")

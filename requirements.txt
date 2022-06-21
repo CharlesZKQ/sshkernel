@@ -6,3 +6,5 @@ nbconvert>=5.4.1
 paramiko>=2.4.2
 plumbum
 PyYAML
+pyasn1
+gssapi
